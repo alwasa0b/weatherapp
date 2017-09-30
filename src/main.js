@@ -71,7 +71,7 @@ const store = new Vuex.Store({
       context.dispatch("fetchGeoData", zip);
       return Vue.http
         .get(
-          `http://api.wunderground.com/api/417b110532ce7d2f/forecast/q/${context
+          `https://api.wunderground.com/api/417b110532ce7d2f/forecast/q/${context
             .state.zipcode}.json`
         )
         .then(
@@ -86,7 +86,7 @@ const store = new Vuex.Store({
     fetchGeoData: (context, zip) => {
       return Vue.http
         .get(
-          `http://api.wunderground.com/api/417b110532ce7d2f/geolookup/q/${context
+          `https://api.wunderground.com/api/417b110532ce7d2f/geolookup/q/${context
             .state.zipcode}.json`
         )
         .then(
