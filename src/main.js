@@ -3,6 +3,7 @@ import App from "./App";
 import router from "./router";
 import Vuex from "vuex";
 import VueResource from "vue-resource";
+import '../css/style.css';
 
 Vue.use(VueResource);
 Vue.use(Vuex);
