@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="forecast-block">
         <p>{{ forecast.day }}</p>
         <img :src="forecast.icon_url" alt="" width="42" height="42">
         <p>{{ forecast.text }}</p>
@@ -14,5 +14,8 @@ export default {
 </script>
 
 <style scoped>
-
+    .forecast-block {
+        color: #ececec;
+        margin: 5px;
+    }
 </style>

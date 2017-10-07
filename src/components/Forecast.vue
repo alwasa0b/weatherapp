@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div >
     <img :src="forecast.icon_url" alt="" width="42" height="42">
-    <p>{{ forecast.text }}</p>
+    <p class="wa-header">>{{ forecast.text }}</p>
   </div>
 </template>
 
@@ -32,5 +32,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+.wa-header {
+  color: #ececec;
 }
 </style>
